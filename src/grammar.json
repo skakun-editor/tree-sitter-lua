@@ -768,7 +768,7 @@
         },
         {
           "type": "SYMBOL",
-          "name": "_function_body"
+          "name": "function_scope"
         }
       ]
     },
@@ -793,7 +793,7 @@
         },
         {
           "type": "SYMBOL",
-          "name": "_function_body"
+          "name": "function_scope"
         }
       ]
     },
@@ -852,8 +852,13 @@
           "type": "FIELD",
           "name": "field",
           "content": {
-            "type": "SYMBOL",
-            "name": "identifier"
+            "type": "ALIAS",
+            "content": {
+              "type": "SYMBOL",
+              "name": "identifier"
+            },
+            "named": true,
+            "value": "member_identifier"
           }
         }
       ]
@@ -877,8 +882,13 @@
           "type": "FIELD",
           "name": "method",
           "content": {
-            "type": "SYMBOL",
-            "name": "identifier"
+            "type": "ALIAS",
+            "content": {
+              "type": "SYMBOL",
+              "name": "identifier"
+            },
+            "named": true,
+            "value": "member_identifier"
           }
         }
       ]
@@ -1870,11 +1880,11 @@
         },
         {
           "type": "SYMBOL",
-          "name": "_function_body"
+          "name": "function_scope"
         }
       ]
     },
-    "_function_body": {
+    "function_scope": {
       "type": "SEQ",
       "members": [
         {
@@ -2091,8 +2101,13 @@
           "type": "FIELD",
           "name": "field",
           "content": {
-            "type": "SYMBOL",
-            "name": "identifier"
+            "type": "ALIAS",
+            "content": {
+              "type": "SYMBOL",
+              "name": "identifier"
+            },
+            "named": true,
+            "value": "member_identifier"
           }
         }
       ]
@@ -2146,8 +2161,13 @@
           "type": "FIELD",
           "name": "method",
           "content": {
-            "type": "SYMBOL",
-            "name": "identifier"
+            "type": "ALIAS",
+            "content": {
+              "type": "SYMBOL",
+              "name": "identifier"
+            },
+            "named": true,
+            "value": "member_identifier"
           }
         }
       ]
@@ -2346,8 +2366,13 @@
               "type": "FIELD",
               "name": "name",
               "content": {
-                "type": "SYMBOL",
-                "name": "identifier"
+                "type": "ALIAS",
+                "content": {
+                  "type": "SYMBOL",
+                  "name": "identifier"
+                },
+                "named": true,
+                "value": "member_identifier"
               }
             },
             {
